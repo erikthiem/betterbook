@@ -20,7 +20,7 @@ function hideTrending()
 
 function getOffFacebookTimer()
 {
-  var firstTimerMinutes = 1;
+  var firstTimerMinutes = 5;
 
   setTimeout(function()
   {
