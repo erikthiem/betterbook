@@ -1,5 +1,5 @@
 # betterbook
-Making Facebook Better
+Making Facebook Better by making it less.
 
 ## What is this?
 This is a Firefox (and maybe Chrome, although yet untested) extension to make Facebook better.
