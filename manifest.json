@@ -1,0 +1,16 @@
+{
+
+  "description": "Makes Facebook better",
+  "manifest_version": 2,
+  "name": "BetterBook",
+  "version": "1.0",
+  "homepage_url": "https://github.com/erikthiem/betterbook",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["betterbook.js"]
+    }
+  ]
+
+}
