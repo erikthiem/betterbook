@@ -8,3 +8,4 @@ This is a Firefox (and maybe Chrome, although yet untested) extension to make Fa
 It currently does these things:
 - Adds a warning on top of the news feed to not spend too much time on Facebook
 - Hides the "Trending" section
+- Clears the page and tells you to do something else after a certain amount of time (with a minute warning)
