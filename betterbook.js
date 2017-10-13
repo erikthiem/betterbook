@@ -1,4 +1,5 @@
 newsFeedWarning();
+hideTrending();
 
 
 function newsFeedWarning()
@@ -8,4 +9,10 @@ function newsFeedWarning()
 
   placeholderElement = document.getElementById("contentArea");
   placeholderElement.prepend(warningMessage);
+}
+
+function hideTrending()
+{
+  var trendingSection = document.getElementById("pagelet_trending_tags_and_topics");
+  trendingSection.textContent = "";
 }
