@@ -2,7 +2,7 @@ newsFeedWarning();
 hideTrending();
 getOffFacebookTimer();
 blockDuringTimePeriod();
-
+hideHomepageRightSideFooter();
 
 function newsFeedWarning()
 {
@@ -47,4 +47,10 @@ function blockDuringTimePeriod()
     document.body.textContent = "";
     document.body.appendChild(message);
   }
+}
+
+function hideHomepageRightSideFooter()
+{
+  var footer = document.getElementById("pagelet_rhc_footer");
+  footer.textContent = "";
 }
