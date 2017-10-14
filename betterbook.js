@@ -1,6 +1,7 @@
 newsFeedWarning();
 hideTrending();
 getOffFacebookTimer();
+blockDuringTimePeriod();
 
 
 function newsFeedWarning()
@@ -32,4 +33,18 @@ function getOffFacebookTimer()
   {
     document.body.textContent = "Enough Facebook. Go do something else.";
   }, (firstTimerMinutes + 1) * 60 * 1000); 
+}
+
+function blockDuringTimePeriod()
+{
+  var hours = new Date().getHours();
+
+  if ((hours >= 22) || (hours < 6))
+  {
+    var message = document.createElement('h1');
+    message.textContent =  "Facebook went to bed and you should too.";
+
+    document.body.textContent = "";
+    document.body.appendChild(message);
+  }
 }
