@@ -3,6 +3,7 @@ hideTrending();
 getOffFacebookTimer();
 blockDuringTimePeriod();
 hideHomepageRightSideFooter();
+hidePeopleYouMayKnow();
 
 function newsFeedWarning()
 {
@@ -53,4 +54,10 @@ function hideHomepageRightSideFooter()
 {
   var footer = document.getElementById("pagelet_rhc_footer");
   footer.textContent = "";
+}
+
+function hidePeopleYouMayKnow()
+{
+  var section = document.getElementById("pagelet_ego_pane");
+  section.textContent = "";
 }
